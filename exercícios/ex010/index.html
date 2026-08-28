@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador. A imagem abaixo se adapta ao formato do dispositivo:</p>
+    <img src="celular.png" alt="imagem padrão">   <!--Útil para imagens simples ou leves que se adapta ao navegador-->
+    <style>
+        img {
+        max-width: 100%;
+        height: auto;
+        }
+    </style>
+    <p>Para imagens pesadas ou que precisam ter boa resolução, independente do dispositivo, podemos definir diferentes imagens para cada resolução com a tag source media type:</p>
+    <picture>
+        <source media="(max-width:500px)" srcset="celular.png" type="image/">
+        <source media="(max-width: 900px)" srcset="tablet.png" type="image/">
+        <source media="(max-width: 1500px)" srcset="pc.png" type="image/">
+        <source media="(max-width: 3850px)" srcset="tv.png" type="image/">
+        <img src="pc.png" alt="pc">  <!--Se a resolução de tela não se adequar a nenhuma imagem, usa pc.png como padrão-->
+    </picture>
+
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a repoduzir áudios em HTML5</p>
+    <audio src="musica-fofa.mp3" controls autoplay></audio>
+    <!--Para garantir compatibilidade na maioria dos navegadores, coloque no formato MP3, OGG e WAV-->
+    <audio preload = "auto" controls autoplay loop> <!--loop fica repetindo a música-->
+        <source src="musica-fofa.mp3" type="audio/mpeg">
+        <source src="musica-fofa.ogg" type="audio/ogg">
+        <source src="musica-fofa.wav" type="audio/wave"> <!--wave é um arquivo muito pesado-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. Clique para <a href="musica-fofa.mp3" download>baixar o arquivo MP3</a></p>
+    </audio> 
+
+</body>
+</html>
