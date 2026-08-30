@@ -17,10 +17,10 @@
     </style>
     <p>Para imagens pesadas ou que precisam ter boa resolução, independente do dispositivo, podemos definir diferentes imagens para cada resolução com a tag source media type:</p>
     <picture>
-        <source media="(max-width:500px)" srcset="celular.png" type="image/">
-        <source media="(max-width: 900px)" srcset="tablet.png" type="image/">
-        <source media="(max-width: 1500px)" srcset="pc.png" type="image/">
-        <source media="(max-width: 3850px)" srcset="tv.png" type="image/">
+        <source media="(max-width:500px)" srcset="celular.png" type="image/png">
+        <source media="(max-width: 900px)" srcset="tablet.png" type="image/png">
+        <source media="(max-width: 1500px)" srcset="pc.png" type="image/png">
+        <source media="(max-width: 3850px)" srcset="tv.png" type="image/png">
         <img src="pc.png" alt="pc">  <!--Se a resolução de tela não se adequar a nenhuma imagem, usa pc.png como padrão-->
     </picture>
 
