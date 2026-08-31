@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: "Aurora";
+            src: url("Aurora.otf") format("truetype");
+            /* Tipos de format():
+             * - truetype (TTF)
+             * - opentype (OTF)
+             * - embedded-opentype (EOT)
+             * - truetype-aat (Apple Advanced Typography)
+                * - svg (SVG)
+             */
+             font-weight: normal; 
+             font-style: normal;
+
+        }
+        body {
+            font: normal 1em "Arial", sans-serif;
+        }
+        h1{
+            font: normal 1.5em "Aurora",cursive, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título do Site com Fonte Aurora</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum accusamus cum iure saepe delectus necessitatibus fugit temporibus recusandae qui mollitia sapiente dolor nobis esse blanditiis assumenda iste consectetur, veniam tenetur.</p>
+</body>
+</html>
