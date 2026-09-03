@@ -17,15 +17,19 @@
         }
 
         img.espaco {
-            max-width: 1600px;
+            width: 100%;
+            height: 100vh;
+            object-fit: cover; /*aumenta a imagem para preencher tudo. Se necessário, algumas partes da imagem ficam cortadas. Usado para imagens de fundo*/
         }
         img.astronauta {
             display: block;
             position: absolute; /*faz com que seja posicionado em relação a div que está inserido, e não a página inteira*/
-            max-width: 70%;
+            width: 40%;  /*o astronauta terá uma largura de 40% do tamanho da div que está inserido*/
+            max-width: 500px;
             max-height: 70%;
-            left: 35%;
-            bottom: 10%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);  /* corrige e centraliza objetos no meio da tela */
 
         }
     </style>
