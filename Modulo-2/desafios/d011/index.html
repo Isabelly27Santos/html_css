@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;  /*calcula o tamanho das caixas, incluindo o padding e margin*/
+        }
+        .container {
+            position: relative; /*faz com que elementos dentro do .container sejam posicionados em relação ao container*/
+            width: 100%;
+            min-height: 100vh; /*O container terá no mínimo a altura inteira da tela*/
+            overflow: hidden; /*esconde áreas que ultrapassam o limite definido*/
+        }
+
+        img.espaco {
+            max-width: 1600px;
+        }
+        img.astronauta {
+            display: block;
+            position: absolute; /*faz com que seja posicionado em relação a div que está inserido, e não a página inteira*/
+            max-width: 70%;
+            max-height: 70%;
+            left: 35%;
+            bottom: 10%;
+
+        }
+    </style>
+    <title>Astronauta</title>
+</head>
+    <body>
+        <main class="container">
+            <img class ="espaco" src="espaco.jpg" alt="espaço">
+            <img class = "astronauta" src="astronauta.png" alt="astronauta">
+        </main>
+    </body>
+</html>
