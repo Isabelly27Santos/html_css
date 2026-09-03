@@ -54,6 +54,7 @@ nav{
     padding: 10px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.281);
     text-align: left;
+    max-width: 50%;
 }
 nav>a {
     text-decoration: none;
