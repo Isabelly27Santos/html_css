@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borda Personalizada</title>
+    <style>
+        h1 {
+            border: 20px solid transparent; 
+            padding: 10px;
+            border-image-source: url("borda.png"); /* Define a imagem que será usada como borda */
+            border-image-slice: 250; /* Define a quantidade de pixels da imagem que será usada como borda */
+            border-image-repeat: round; /* Define como a imagem será repetida na borda */
+            background-color: rgb(139, 152, 155);
+            text-align: center;
+            color: white;
+        }
+        h1#titulo2 {
+            border-image: url("borda2.png") 216 round; 
+            background-color: transparent;
+            color: rgb(173, 120, 21);
+        }
+        h1#titulo3 {
+            border-image: url("borda3.png") 166 round;
+            background-color: rgba(201, 91, 192, 0.185);
+            color: rgb(145, 131, 106);
+            border-radius: 60px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Borda Personalizada</h1>
+    <h1 id = "titulo2">Teste de Borda Personalizada</h1>
+    <h1 id = "titulo3">Teste de Borda Personalizada</h1>
+</body>
+</html>

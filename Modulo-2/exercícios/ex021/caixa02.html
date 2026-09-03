@@ -17,14 +17,40 @@
         }
         main {
             background-color: #d3cbcb;
-            padding: 20px;
+            padding: 5px;
             margin: 10px;
+            border-radius: 7px;
         }
+        nav {
+            background-color: #444;
+            padding: 3px;
+            margin: 01px;
+            box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.747); /*sombra lateral, vertical, blur, cor*/
+        }
+
+        nav>a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        nav>a:hover {
+            text-decoration: underline;
+        }
+        
         article {
             background-color: white;
             padding: 15px;
-            margin: 10px 0;
+            margin: 10px;
+            border-radius: 1px 15px;
+            box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.747); 
         } 
+        
+        article>aside {
+            background-color: #f5f3f3;
+        }
+
         footer {
             background-color: #333;
             color: #fff;
@@ -32,6 +58,24 @@
             margin: 10px;
             text-align: center;
         }
+        footer> p{
+            margin: 1px;
+        }
+        a {
+            color:#d3cbcb
+        }
+        section#Assuntos {
+            margin: 10px;
+            font-weight: 600;
+        }
+        div#bola {
+            width: 100px;
+            height: 100px;
+            background-color: #967878;
+            margin: 10px;
+            border-radius: 50%;
+        }
+
     </style>
 </head>
 <body>
@@ -47,6 +91,7 @@
     </header>
     <main> <!-- Conteúdo principal -->
         <section id = "Assuntos"> <!-- Seção de assuntos -->
+            <p>Esportes Política Tecnologia</p>
         </section>
         <section id = "Noticias"> <!-- Seção de notícias -->
             <article> <!-- Artigo de notícia -->
@@ -62,5 +107,6 @@
     <footer> <!-- Rodapé do site -->
         <p>Todos os direitos reservados</p>
     </footer>
+    <div id = "bola"></div>
 </body>
 </html>
