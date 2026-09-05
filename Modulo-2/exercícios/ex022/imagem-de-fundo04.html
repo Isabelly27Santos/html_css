@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento</title>
+    <style>
+        body {
+            position: relative;
+            height: 97vh;
+            border: 5px solid palevioletred;
+            box-sizing: border-box;
+            box-shadow: 0 0 0 30px palevioletred;
+            background-color: rgb(232, 223, 230);
+        }
+
+        .tela {
+            height: 100%;
+            width: 100%;
+            display: grid; /*separa a tela em colunas e linhas*/
+            grid-template-columns:  repeat(5, 1fr); /*divide em 5 colunas iguais*/
+            grid-template-rows: repeat(5, 1fr);  /*divide em 5 linhas iguais*/
+        }
+
+        .tela> div {
+            width: 100px;
+            height: 100px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            margin: 10px;
+        }
+
+        #q1 {
+            background-image: url("imagens/gatinho.png");
+            background-size: 100% 100%;
+            grid-column: 1;
+            grid-row: 1;
+            justify-self: center;
+        }
+
+        #q2 {
+            background-image: url("imagens/hams.png");
+            background-size: 90% 100%;
+            grid-column: 5;
+            grid-row: 1;
+            justify-self: center;
+        }
+
+        #q3 {
+            background-image: url("imagens/tartaruga.png");
+            background-size: 90% 100%;
+            grid-column: 1;
+            grid-row: 5;
+            align-self: end;
+            justify-self: center;
+        }
+
+        #q4 {
+            background-image: url("imagens/pinguim.png");
+            background-size: 90% 100%;
+            grid-column: 5;
+            grid-row: 5;
+            justify-self: center;
+            align-self: end;
+        }
+        #q5 {
+            background-image: url("imagens/hellokitty.png");
+            grid-column: 3;
+            grid-row: 3;
+            justify-self: center;
+            align-self: center;
+            background-size: 99% 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="tela">
+        <div id="q1"></div>
+        <div id="q2"></div>
+        <div id="q3"></div>
+        <div id="q4"></div>
+        <div id="q5"></div>
+    </div>
+
+</body>
+</html>
